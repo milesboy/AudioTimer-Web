@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Timer – How to Use</title>
+    <meta name="description" content="Step-by-step guide for Audio Timer – the voice-announced workout & interval timer.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #121212;
+            --surface: #1e1e1e;
+            --primary: #00b4d8;
+            --text: #e8ecef;
+            --text-muted: #aaaaaa;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+            background: linear-gradient(90deg, #00b4d8, #90e0ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+        section {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        ul {
+            padding-left: 28px;
+            margin: 12px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .screenshot {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 14px;
+            border: 3px solid #333;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+        .tip {
+            background: rgba(0,180,216,0.15);
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <h1>Audio Timer Tutorial</h1>
+        <p class="subtitle">Your voice-announced interval & workout timer</p>
+    </header>
+
+    <!-- 1. Setup Screen -->
+    <section>
+        <h2>1. Create Your Workout</h2>
+        <ul>
+            <li>Tap the gear icon → Setup screen</li>
+            <li>Choose <strong>Number of Timers</strong> (1–10)</li>
+            <li>Set each timer’s <strong>Duration</strong>, <strong>Repeats</strong>, and optional <strong>Pause between repeats</strong></li>
+        </ul>
+        <img src="screenshot-setup.jpg" alt="Setup screen with timers" class="screenshot">
+    </section>
+
+    <!-- 2. Global Settings -->
+    <section>
+        <h2>2. Global Settings</h2>
+        <ul>
+            <li><strong>Initial Pause</strong> – countdown before first timer starts</li>
+            <li><strong>Pause Between Sequences</strong> – rest after a full cycle</li>
+            <li><strong>Callout Interval</strong> – voice announces remaining time every X seconds</li>
+        </ul>
+        <img src="screenshot-global-settings.jpg" alt="Global settings section" class="screenshot">
+    </section>
+
+    <!-- 3. Saving Presets -->
+    <section>
+        <h2>3. Save Your Preset</h2>
+        <ul>
+            <li>Tap <strong>“Save As Preset”</strong></li>
+            <li>Name it (e.g., “Tabata”, “EMOM 60”, “HIIT 30/10”)</li>
+            <li>It instantly appears in the preset list</li>
+        </ul>
+        <img src="screenshot-save-preset.jpg" alt="Saving a preset" class="screenshot">
+    </section>
+
+    <!-- 4. Main Screen & Running -->
+    <section>
+        <h2>4. Run Your Timer</h2>
+        <ul>
+            <li>Go back → tap the big Play button</li>
+            <li>Voice guides you the entire time</li>
+            <li>Use <strong>Repeat</strong> and <strong>Next</strong> buttons during workout</li>
+        </ul>
+        <img src="screenshot-main-running.jpg" alt="Main screen while timer is running" class="screenshot">
+        <div class="tip">
+            <strong>Pro tip:</strong> The screen stays on and audio works perfectly even when phone is locked!
+        </div>
+    </section>
+
+ <!-- 5. Preset List & Management -->
+<section>
+    <h2>5. Manage Your Presets</h2>
+    <p>Tap any preset in the list on the main screen to load it instantly.</p>
+    
+    <img src="screenshot-preset-list.jpg" alt="List of saved presets" class="screenshot">
+
+    <div class="tip">
+        <strong>Delete a preset:</strong><br>
+        Swipe any preset <strong>left</strong> in the list → it will be deleted.<br><br>
+        <strong>Made a mistake?</strong> A toast appears with an <strong>“UNDO”</strong> button for a few seconds — tap it to instantly restore the preset!
+    </div>
+
+    <img src="screenshot-delete-undo.jpg" alt="Swipe to delete and undo toast" class="screenshot">
+</section>
+
+    <footer>
+        © 2025 Elysium App Labs • <a href="https://elysiumapplabs.com">elysiumapplabs.com</a>
+    </footer>
+
+</div>
+</body>
+</html>
